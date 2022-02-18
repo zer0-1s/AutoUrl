@@ -4,6 +4,7 @@
 ## steps
 
 ```
+python url.py # generate url.pt
 mkdir model_store
 
 torch-model-archiver --model-name url \--version 1.0 \--serialized-file url.pt \--extra-files ./index_to_name.json,./MyHandler.py \--handler my_handler.py  \--export-path model_store -f
