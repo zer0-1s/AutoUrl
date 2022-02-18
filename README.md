@@ -1,5 +1,5 @@
 # AutoUrl
-> pytorchserve与url检测联动
+> torchserve与url检测联动
 
 ## steps
 
