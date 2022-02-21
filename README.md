@@ -47,4 +47,4 @@ https://github.com/FrancescoSaverioZuppichini/torchserve-tryout
 
 https://github.com/zer0-1s/MaliciousURLs/blob/master/train_pickle.py
 
-> 注：MyHandler.py参考第2,3个链接
+> 注：MyHandler.py参考第1,2,3个链接
