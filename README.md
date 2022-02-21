@@ -35,7 +35,7 @@ curl -X POST "http://localhost:8081/models?url=url.mar" # upload models
 
 curl "http://localhost:8081/models" # check models
 
-curl -v -X PUT "http://localhost:8081/models/url?min_worker=2"
+curl -v -X PUT "http://localhost:8081/models/url?min_worker=2
 
 curl http://127.0.0.1:8080/predictions/url -T test.txt # no  response
 ```
