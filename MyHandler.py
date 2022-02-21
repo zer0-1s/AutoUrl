@@ -19,8 +19,8 @@ class MyHandler(BaseHandler):
         X_predict = self.vectorizer.transform(newQueries)
         return X_predict,requests
 
-
-    def inference(self, x,requests):
+    # 预测结果
+    def inference(self,x,requests):
         """
         Given the data from .preprocess, perform inference using the model.
         We return the predicted label for each image.
@@ -28,7 +28,7 @@ class MyHandler(BaseHandler):
         preds = self.lgs.predict(x)
         return preds,requests
 
-
+    # 返回最终预测结果
     def postprocess(self, preds,requests):
         """
         Given the data from .inference, postprocess the output.
