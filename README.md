@@ -28,6 +28,17 @@ docker run --rm --shm-size=1g \
         -p7071:7071 \
         --mount type=bind,source=/home/test/model_store,target=/tmp/models pytorch/torchserve:latest  torchserve --model-store=/tmp/models
 ```
+
+## test
+```
+curl -X POST "http://localhost:8081/models?url=url.mar" # upload models
+
+curl "http://localhost:8081/models" # check models
+
+curl -v -X PUT "http://localhost:8081/models/url?min_worker=2"
+
+curl http://127.0.0.1:8080/predictions/url -T test.txt # no  response
+```
 ## reference:
 
 https://aijishu.com/a/1060000000136517#item-3
