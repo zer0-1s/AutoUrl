@@ -44,3 +44,7 @@ curl http://127.0.0.1:8080/predictions/url -T test.txt # no  response
 https://aijishu.com/a/1060000000136517#item-3
 
 https://github.com/FrancescoSaverioZuppichini/torchserve-tryout
+
+https://github.com/zer0-1s/MaliciousURLs/blob/master/train_pickle.py
+
+> 注：MyHandler.py参考第2,3个链接
