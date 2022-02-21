@@ -1,7 +1,7 @@
 # AutoUrl
 > torchserve与url检测联动
 
-## steps
+## steps 
 
 ```
 python url.py # generate url.pt
@@ -16,7 +16,7 @@ torchserve --start --model-store model_store --models url=url.mar
 ## dokcer 
 
 ```
-
+docker pull pytorch/torchserve
 
 docker run --rm --shm-size=1g \
         --ulimit memlock=-1 \
