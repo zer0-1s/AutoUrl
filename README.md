@@ -26,7 +26,8 @@ docker run --rm --shm-size=1g \
         -p8082:8082 \
         -p7070:7070 \
         -p7071:7071 \
-        --mount type=bind,source=/home/test/model_store,target=/tmp/models pytorch/torchserve:latest  torchserve --model-store=/tmp/models
+        --mount type=bind,source=/home/test/model_store,target=/tmp/models pytorch/torchserve:latest  torchserve --model-store=/tmp/models --extra-files \                               ./index_to_name.json,./MyHandler.py \
+        --handler my_handler.py
 ```
 
 ## test
