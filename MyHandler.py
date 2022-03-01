@@ -17,6 +17,8 @@ class MyHandler(BaseHandler):
         """
         newQueries = [urllib.parse.unquote(url) for url in requests]
         X_predict = self.vectorizer.transform(newQueries)
+        print("--------********----------------------")
+        print(X_predict)
         return X_predict,requests
 
     # 预测结果
@@ -26,6 +28,8 @@ class MyHandler(BaseHandler):
         We return the predicted label for each image.
         """
         preds = self.lgs.predict(x)
+        print("--------********----------------------")
+        print()
         return preds,requests
 
     # 返回最终预测结果
